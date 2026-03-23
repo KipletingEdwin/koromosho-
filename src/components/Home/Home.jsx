@@ -3,14 +3,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <section className="relative w-full h-[90vh] flex flex-col justify-center text-white">
-    {/* Background Image */}
-    <div
-      className="absolute inset-0 bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/hero-bg.jpg')",
-      }}
-    ></div>
+    <section className="relative w-full h-[90vh] flex flex-col justify-center text-white ">
 
     {/* Gradient Overlay */}
     <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/70 to-black/90"></div>
@@ -40,7 +33,7 @@ export const Home = () => {
     </div>
 
     {/* Weekly Schedule */}
-    <div className="relative z-10 bg-white text-gray-900 mt-16 py-12">
+    <div className="relative z-10 bg-[#0A0F1A] text-white mt-16 py-12 mx-100 rounded-2xl">
       <h2 className="text-3xl font-bold text-center mb-10">
         Join Us This Week
       </h2>
