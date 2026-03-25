@@ -1,9 +1,11 @@
+
 import React, { useState } from "react";
 import logo from "../../assets/logo.jpeg";
-import { Menu, Moon, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [dark, setDark] = useState(false);
 
   const navItems = [
     "About",
@@ -23,7 +25,7 @@ const Navbar = () => {
             <h1 className="text-xl font-bold text-gray-900">
               ACK St James Koromosho
             </h1>
-            <p className="text-sm text-purple-600 -mt-1">
+            <p className="text-sm  -mt-1">
               Love God. Love People.
             </p>
           </div>
@@ -40,13 +42,16 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <button className="px-4 py-2 bg-gray-900 text-white rounded-md hover:bg-gray-800">
+
+          <button onClick={() => setDark(!dark) }>
+            { dark ? <Sun/> : <Moon />   }
+          </button>
+          <button className="px-4 py-2  text-gray-800 rounded-full border border-gray-500 ">
             Give
           </button>
-          <button className="px-4 py-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-50">
+          <button className="px-4 py-2 border border-purple-600 text-white rounded-full bg-purple-600 font-medium ">
             Plan Your Visit
           </button>
-          <Moon className="w-6 h-6 text-gray-700 cursor-pointer" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -69,13 +74,19 @@ const Navbar = () => {
           </ul>
 
           <div className="pt-4 flex flex-col gap-3">
+          <button className="lg:hidden" onClick={() => setOpen(!open)}>
+          {open ? (
+            <X className="w-7 h-7 text-gray-800" />
+          ) : (
+            <Menu className="w-7 h-7 text-gray-800" />
+          )}
+        </button>
             <button className="w-full px-4 py-2 bg-gray-900 text-white rounded-md">
               Give
             </button>
             <button className="w-full px-4 py-2 border border-purple-600 text-purple-600 rounded-md">
               Plan Your Visit
             </button>
-            <Moon className="w-6 h-6 text-gray-700 mt-2" />
           </div>
         </div>
       )}

@@ -7,7 +7,7 @@ import Ministries from "./components/Ministries/Ministries"
 import Navbar from "./components/Navbar/Navbar"
 import Sermons from "./components/Sermons/Sermons"
 import Service from "./components/Service/Service"
-import Welcome from "./components/WElcome/Welcome"
+import Welcome from "./components/Welcome/Welcome"
 
 function App() {
 

@@ -22,11 +22,11 @@ export const Home = () => {
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-md font-semibold">
+        <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-full font-semibold">
           Plan Your Visit
         </button>
 
-        <button className="px-6 py-3 border border-white hover:bg-white hover:text-black rounded-md font-semibold">
+        <button className="px-6 py-3 border border-white hover:bg-white hover:text-black rounded-full font-semibold">
           Watch Online
         </button>
       </div>
