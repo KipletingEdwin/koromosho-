@@ -6,9 +6,10 @@ const Service = () => {
     <section className="w-full bg-white py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">
           Service Times
         </h2>
+        <p className='mb-12'>We'd love to have you join us for worship. Here's when you can find us.</p>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
