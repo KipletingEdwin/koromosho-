@@ -1,10 +1,10 @@
 import React from 'react'
- import { Calendar, Clock, Users } from "lucide-react";
+import { Calendar, Clock, Users } from "lucide-react";
 
 const Service = () => {
   return (
-    <section className="w-full bg-white py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="w-full bg-white py-20 px-20">
+      <div className="mx-auto text-center">
         {/* Heading */}
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
           Service Times
@@ -12,16 +12,17 @@ const Service = () => {
         <p className='mb-12'>We'd love to have you join us for worship. Here's when you can find us.</p>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10">
           {/* Sunday Worship */}
-          <div className="p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+          <div className="p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition bg-purple-50">
             <div className="flex justify-center mb-4">
-              <Users className="w-10 h-10 text-purple-600" />
+              <Clock className="w-10 h-10 text-purple-600" />
             </div>
+            <h4 className='text-purple-600' >SUNDAY</h4>
             <h3 className="text-xl font-semibold text-gray-900">
               Sunday Worship
             </h3>
-            <p className="text-purple-700 font-medium mt-2">
+            <p className="text-yellow-600 font-medium mt-2">
               9:00 AM & 11:00 AM
             </p>
             <p className="text-gray-600 mt-3">
@@ -31,14 +32,15 @@ const Service = () => {
           </div>
 
           {/* Wednesday Bible Study */}
-          <div className="p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+          <div className="p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition bg-purple-50">
             <div className="flex justify-center mb-4">
-              <Calendar className="w-10 h-10 text-purple-600" />
+              <Clock className="w-10 h-10 text-purple-600" />
             </div>
+            <h4 className='text-purple-600'>WENESDAY</h4>
             <h3 className="text-xl font-semibold text-gray-900">
               Wednesday Bible Study
             </h3>
-            <p className="text-purple-700 font-medium mt-2">7:00 PM</p>
+            <p className="text-yellow-600 font-medium mt-2">7:00 PM</p>
             <p className="text-gray-600 mt-3">
               Mid-week Bible study and prayer meeting. Dive deeper into
               Scripture with the community.
@@ -46,14 +48,15 @@ const Service = () => {
           </div>
 
           {/* Friday Youth Group */}
-          <div className="p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+          <div className="p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition bg-purple-50">
             <div className="flex justify-center mb-4">
               <Clock className="w-10 h-10 text-purple-600" />
             </div>
+            <h4 className='text-purple-600'>FRIDAY</h4>
             <h3 className="text-xl font-semibold text-gray-900">
               Friday Youth Group
             </h3>
-            <p className="text-purple-700 font-medium mt-2">6:30 PM</p>
+            <p className="text-yellow-600 font-medium mt-2">6:30 PM</p>
             <p className="text-gray-600 mt-3">
               Weekly gathering for middle and high school students with games,
               worship, and relevant teaching.
